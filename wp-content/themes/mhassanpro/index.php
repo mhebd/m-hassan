@@ -11,22 +11,22 @@
 							<?php 
 								if(get_theme_mod('hero-top-avatar')){ ?>
 									<div class="hero-avatar">
-										<img src="<?php echo get_theme_mod('hero-top-avatar'); ?>" class="img-fluid avatar-top-img " />
+										<img src="<?php echo get_theme_mod('hero-top-avatar'); ?>" class="img-fluid avatar-top-img  wow slideInDown" />
 									</div> <?php
 								}
 							?>
                             <div class="hero-info">
                             <?php
                               if(get_theme_mod('welcome-note')){ ?>
-                                <h3 class="head-line"><?php echo get_theme_mod('welcome-note', 'Hi, This is me'); ?></h3> <?php
+                                <h3 class="head-line  wow fadeIn"><?php echo get_theme_mod('welcome-note', 'Hi, This is me'); ?></h3> <?php
                               };
 
                               if(get_theme_mod('name')){ ?>
-                                <h2 class="name"><?php echo get_theme_mod('name', 'Mehedi Hassan'); ?></h2><?php
+                                <h2 class="name  wow fadeIn"><?php echo get_theme_mod('name', 'Mehedi Hassan'); ?></h2><?php
                               };
 
                               if(get_theme_mod('extra-info')){ ?>
-                                <h3 class="profession"><i class="fas fa-share"></i><?php echo get_theme_mod('extra-info', 'front-end developer'); ?></h3> <?php
+                                <h3 class="profession  wow fadeIn"><i class="fas fa-share"></i><?php echo get_theme_mod('extra-info', 'front-end developer'); ?></h3> <?php
                               };
                             
                             ?>
@@ -47,7 +47,7 @@
                                   if(get_theme_mod('btn-link')){
                                     echo get_theme_mod('btn-link', 'https://www.fiverr.com/m_hassan_coder');
                                   }?>" target="_blank"
-                                    class="hire-btn btn btn-success">
+                                    class="hire-btn btn btn-success  wow fadeIn">
                                     <?php
                                   if(get_theme_mod('btn-text')){
                                     echo get_theme_mod('btn-text', 'Hire me');
@@ -77,11 +77,11 @@
                             <div class="profile-info">
                                 
                                 <?php if(get_theme_mod('small-title')){ ?>
-                                  <h4 class="small-heading"><?php echo get_theme_mod('small-title', 'about me') ?></h4> <?php
+                                  <h4 class="small-heading  wow fadeIn"><?php echo get_theme_mod('small-title', 'about me') ?></h4> <?php
                                 } ?>
 
                                 <?php if(get_theme_mod('big-title')){ ?>
-                                  <div class="section-heading">
+                                  <div class="section-heading  wow fadeIn">
                                     <h2 class=""><?php echo get_theme_mod('big-title', 'personal details') ?></h2>
                                 </div> <?php
                                 } ?>
@@ -89,7 +89,7 @@
 
                                 <div class="details">
                                     <?php if(get_theme_mod('details')){ ?>
-                                      <p class="description"><?php echo get_theme_mod('details', 'Hi, I am Md. Mehedi Hassan. I am a professional Front-end
+                                      <p class="description  wow fadeIn"><?php echo get_theme_mod('details', 'Hi, I am Md. Mehedi Hassan. I am a professional Front-end
                                             Developer. I can Design any kind of SEO friendly website by HTML5, CSS3 &
                                             jQuery. I can create a responsive design with Bootstrap4 which is useful for
                                             supporting your site in any device.') ?></p> <?php
@@ -97,7 +97,7 @@
                                     
                                     <?php if(get_theme_mod('details-table')){
                                       echo get_theme_mod('details-table', '
-                                      <table class="table others-info">
+                                      <table class="table others-info  wow fadeIn">
                                       <tr>
                                           <th>Age</th>
                                           <td>22</td>
@@ -121,7 +121,7 @@
 
                                     
 
-                                    <div class="social-link">
+                                    <div class="social-link  wow fadeIn">
 										<?php 
 											if(is_active_sidebar('social-btn-menu')){
 												dynamic_sidebar('social-btn-menu');
@@ -188,7 +188,7 @@
                         </div>
 
                         <?php if(get_theme_mod('about-profile-img')){ ?>
-                          <div class="col-md-4 col-lg-4 ml-lg-auto order-md-2 order-1 mb-5">
+                          <div class="col-md-4 col-lg-4 ml-lg-auto order-md-2 order-1 mb-5  wow fadeIn">
                           <div class="profile-img">
                               <img src="<?php echo get_theme_mod('about-profile-img', get_bloginfo('template_directory').'/img/me-2.png'); ?>" alt="" class="img-flui">
                           </div>
@@ -213,11 +213,11 @@
 
                     <div class="section-heading text-center">
                         <?php if(get_theme_mod('ss-heading')){  ?>
-                          <h2 class=""><?php echo get_theme_mod('ss-heading', 'My Offered Services') ?> </h2> <?php
+                          <h2 class="  wow fadeIn"><?php echo get_theme_mod('ss-heading', 'My Offered Services') ?> </h2> <?php
                         } ?> 
 
                         <?php if(get_theme_mod('ss-title-desc')){ ?>
-                          <p class="text-capitalize"><?php echo get_theme_mod('ss-title-desc', 'Some of my special services for you!') ?> </p> <?php
+                          <p class="text-capitalize  wow fadeIn"><?php echo get_theme_mod('ss-title-desc', 'Some of my special services for you!') ?> </p> <?php
                         } ?>
                     </div>
 
@@ -231,7 +231,7 @@
                         if($service->have_posts()) :
                           while($service->have_posts()) :
                             $service->the_post(); ?>
-                            <div class="col-md-6 col-lg-4 mb-4  wow slideInLeft">
+                            <div class="col-md-6 col-lg-4 mb-4  wow fadeIn">
                               <div class="service text-center">
                                   <div class="icon">
                                       <i class="fas fa-<?php echo get_post_meta($post->ID, 'service_icon_name', true); ?>"></i>
@@ -266,16 +266,16 @@
 
                     <div class="section-heading text-center">
                         <?php if(get_theme_mod('ps-heading')){  ?>
-                          <h2 class=""><?php echo get_theme_mod('ps-heading', 'some of my work') ?> </h2> <?php
+                          <h2 class="  wow fadeIn"><?php echo get_theme_mod('ps-heading', 'some of my work') ?> </h2> <?php
                         } ?> 
 
                         <?php if(get_theme_mod('ps-title-desc')){ ?>
-                          <p class="text-capitalize"><?php echo get_theme_mod('ps-title-desc', 'ake a look at some of my beautiful projects!') ?> </p> <?php
+                          <p class="text-capitalize  wow fadeIn"><?php echo get_theme_mod('ps-title-desc', 'ake a look at some of my beautiful projects!') ?> </p> <?php
                         } ?>
                     </div>
 
                     <div class="portfolio-menu mb-5">
-                        <ul class="nav justify-content-center">
+                        <ul class="nav justify-content-center  wow fadeIn">
                             <li class="nav-item active mb-3" data-filter="*">
                                 All
                             </li>
@@ -343,7 +343,7 @@
                         </ul>
                     </div>
 
-                    <div class="portfolios row">
+                    <div class="portfolios row  wow fadeIn">
                       <?php 
                         $portfolio = new WP_Query([
                           'post_type'     => 'portfolios',
@@ -353,13 +353,13 @@
                         if($portfolio->have_posts()) :
                           while($portfolio->have_posts()) :
                             $portfolio->the_post(); ?>
-                            <div class="col-md-6 col-lg-4 item <?php echo get_post_meta($post->ID, 'category', true); ?>  mb-4 wow slideInUp">
+                            <div class="col-md-6 col-lg-4 item <?php echo get_post_meta($post->ID, 'category', true); ?>  mb-4">
                               <div class="content">
                                   <img src="<?php the_post_thumbnail_url(); ?>" alt="" class="img-fluid">
                                   <div class="overlay">
                                       <h4 class="text-uppercase text-light lead"><?php the_title(); ?></h4>
                                       <a href="<?php echo get_post_meta($post->ID, 'portfolio_link', true); ?>" target="_blank" class=""><i
-                                              class="fas fa-binoculars"></i></a>
+                                              class="fas fa-eye"></i></a>
                                   </div>
                               </div>
                             </div> <?php 
@@ -388,16 +388,16 @@
                 <div class="review-content">
                     <div class="section-heading text-center">
                         <?php if(get_theme_mod('rs-heading')){  ?>
-                          <h2 class=""><?php echo get_theme_mod('rs-heading', 'What people say') ?> </h2> <?php
+                          <h2 class="  wow fadeIn"><?php echo get_theme_mod('rs-heading', 'What people say') ?> </h2> <?php
                         } ?> 
 
                         <?php if(get_theme_mod('rs-title-desc')){ ?>
-                          <p class="text-capitalize"><?php echo get_theme_mod('rs-title-desc', 'what people exactly say for my job?') ?> </p> <?php
+                          <p class="text-capitalize  wow fadeIn"><?php echo get_theme_mod('rs-title-desc', 'what people exactly say for my job?') ?> </p> <?php
                         } ?>
                     </div>
 
 
-                    <div class="review-slider-wrapper">
+                    <div class="review-slider-wrapper   wow fadeIn">
                         <div class="owl-carousel owl-theme container">
 
                           <?php
@@ -415,8 +415,8 @@
                                       <div class="item text-center">
 
                                           <img src="<?php the_post_thumbnail_url(); ?>" alt="" class="img-fluid mx-auto">
-                                          <h3 class="name"><?php the_title(); ?></h3>
-                                          <p class="quote"><?php the_content(); ?></p>
+                                          <h3 class="name  wow fadeIn"><?php the_title(); ?></h3>
+                                          <p class="quote  wow fadeIn"><?php the_content(); ?></p>
                                       </div>
                                   </div>
                                 </div>
@@ -445,11 +445,11 @@
                 <div class="contact-content">
                     <div class="section-heading text-center">
                         <?php if(get_theme_mod('cs-heading')){  ?>
-                          <h2 class=""><?php echo get_theme_mod('cs-heading', 'Contact me') ?> </h2> <?php
+                          <h2 class="  wow fadeIn"><?php echo get_theme_mod('cs-heading', 'Contact me') ?> </h2> <?php
                         } ?> 
 
                         <?php if(get_theme_mod('cs-title-desc')){ ?>
-                          <p class="text-capitalize"><?php echo get_theme_mod('cs-title-desc', 'Feel free to contact me') ?> </p> <?php
+                          <p class="text-capitalize  wow fadeIn"><?php echo get_theme_mod('cs-title-desc', 'Feel free to contact me') ?> </p> <?php
                         } ?>
                     </div>
 					
@@ -531,26 +531,26 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="text" name="name" class="form-control name" placeholder="Your Name" value="<?php echo $_POST['name']; ?>">
+                                        <input type="text" name="name" class="form-control name  wow slideInLeft" placeholder="Your Name" value="<?php echo $_POST['name']; ?>">
                                       </div>
 
                                     <div class="form-group">
-                                        <input type="text" name="subject" class="form-control subject" placeholder="Your Subject" value="<?php echo $_POST['subject']; ?>">
+                                        <input type="text" name="subject" class="form-control subject  wow slideInLeft" placeholder="Your Subject" value="<?php echo $_POST['subject']; ?>">
                                     </div>
 
                                     <div class="form-group">
-                                        <input type="email" name="email" class="form-control email" placeholder="Your Email" value="<?php echo $_POST['email']; ?>">
+                                        <input type="email" name="email" class="form-control email  wow slideInLeft" placeholder="Your Email" value="<?php echo $_POST['email']; ?>">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <textarea name="messages" id="" cols="30" rows="10" class="form-control message"
+                                        <textarea name="messages" id="" cols="30" rows="10" class="form-control message  wow slideInRight"
                                             placeholder="Your Message"></textarea>
                                     </div>
                                 </div>
                             </div>
 
-                            <input type="submit" name="submit" value="Send Message" class="btn btn-success sub-btn mt-4">
+                            <input type="submit" name="submit" value="Send Message" class="btn btn-success sub-btn mt-4 wow slideInUp">
                         </form>
                         
                     </div>

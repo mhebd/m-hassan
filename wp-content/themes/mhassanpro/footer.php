@@ -7,18 +7,18 @@
                     <div class="contact-list">
                     <div class="section-heading text-center">
                         <?php if(get_theme_mod('fs-heading')){  ?>
-                          <h2 class=""><?php echo get_theme_mod('fs-heading', 'Do you have any project? <span>Let\'s Talk</span>') ?> </h2> <?php
+                          <h2 class=" wow slideInLeft"><?php echo get_theme_mod('fs-heading', 'Do you have any project? <span>Let\'s Talk</span>') ?> </h2> <?php
                         } ?> 
 
                         <?php if(get_theme_mod('fs-title-desc')){ ?>
-                          <p class="text-capitalize"><?php echo get_theme_mod('fs-title-desc', 'want to create a beautiful website for you or your business.
+                          <p class="text-capitalize wow slideInRight"><?php echo get_theme_mod('fs-title-desc', 'want to create a beautiful website for you or your business.
                                 <br>Then, why are you waiting? let\'s discuss and Design something great!') ?> </p> <?php
                         } ?>
                     </div>
                         
 
                         <div class="list">
-                            <ul class="nav justify-content-center">
+                            <ul class="nav justify-content-center wow slideInUp">
                                 <li class="nav-item"><a href="<?php if(get_theme_mod('f-skype')){
                                   echo get_theme_mod('f-skype', 'https://join.skype.com/invite/zL0Vx8IHyN9V');
                                 } ?>"
@@ -45,7 +45,7 @@
                         </div>
                     </div>
 
-                    <div class="copyright-wrapper text-center">
+                    <div class="copyright-wrapper text-center wow fadeIn">
                         <p class="lead text-capitalize">&copy; <a href="<?php echo site_url(); ?>" class=""
                                 style="font-family: 'Courgette', cursive;"><?php bloginfo('name'); ?></a> <?php if(get_theme_mod('copywrite')){
                                   echo get_theme_mod('copywrite', 'Personal Website');

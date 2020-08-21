@@ -834,6 +834,37 @@
       'section'   => 'basic',
       'setting'  => 'theme-color',
     ]));
+	  
+	  
+    //Theme button color one setting
+    $wp_customize->add_setting('theme-btn-color1', [
+      'default'     => '#0df737',
+      'type'        => 'theme_mod',
+    ]);
+    //Theme button color one control
+    $wp_customize->add_control(new WP_Customize_Color_Control(
+      $wp_customize, 'theme-btn-color1', [
+      'label'     => __('Theme Button Color One', 'mhassan'),
+      'section'   => 'basic',
+      'setting'  => 'theme-btn-color1',
+    ]));
+	  	  
+	  
+    //Theme button color two setting
+    $wp_customize->add_setting('theme-btn-color2', [
+      'default'     => '#0df737',
+      'type'        => 'theme_mod',
+    ]);
+    //Theme button color two control
+    $wp_customize->add_control(new WP_Customize_Color_Control(
+      $wp_customize, 'theme-btn-color2', [
+      'label'     => __('Theme Button Color Two', 'mhassan'),
+      'section'   => 'basic',
+      'setting'  => 'theme-btn-color2',
+    ]));
+	  
+	  
+	  
   }
   add_action('customize_register', 'mhassan_basic_customizer');
 

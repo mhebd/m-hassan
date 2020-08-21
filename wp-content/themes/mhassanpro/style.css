@@ -241,7 +241,6 @@ button:focus {
     -ms-border-radius: 0px;
     -o-border-radius: 0px;
     padding: 10px 45px;
-    background: linear-gradient(to bottom, #0df737, #076404);
     outline: none;
     border:none;
 }
@@ -462,7 +461,8 @@ button:focus {
 }
 .portfolios{
 	overflow-y: scroll;
-	max-height: 1050px;
+	max-height: 77vh;
+	min-height: 450px;
 }
 #portfolio .nav-item {
     margin:0 5px;

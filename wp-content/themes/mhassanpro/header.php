@@ -33,6 +33,10 @@
       } ?>;
     }
 
+	  .hero-info .hire-btn, #contact .sub-btn, #services .hire-btn{
+		background: linear-gradient(to bottom,<?php echo get_theme_mod('theme-btn-color1', '#0df737') ; ?> , <?php echo get_theme_mod('theme-btn-color2', ' #076404') ; ?> );
+		}
+	  
     .hero-bg-cover{
       background-image:linear-gradient( black,rgba(72, 57, 208, 0.562)), url(<?php if(get_theme_mod('hero-bg')){
         echo get_theme_mod('hero-bg', get_bloginfo('template_directory').'/../img/hero-bg.jpg');
@@ -89,7 +93,7 @@
 
 
 
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        <button class="navbar-toggler wow fadeOut" type="button" data-toggle="collapse" data-target="#navbarNav"
                                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                                 <i class="fas fa-bars"></i>
                         </button>
@@ -99,7 +103,7 @@
                             the_custom_logo();
                           } else{ ?>
                             <a href="<?php echo home_url(); ?>" class="">
-                                  <h2 class="brand-name"><?php bloginfo('name'); ?></h2>
+                                  <h2 class="brand-name wow slideInLeft"><?php bloginfo('name'); ?></h2>
                               </a> <?php 
                           } ?>
                             
@@ -108,7 +112,7 @@
                         
 
                         <div class="collapse navbar-collapse order-lg-1 order-2" id="navbarNav">
-                            <ul class="navbar-nav ml-auto">
+                            <ul class="navbar-nav ml-auto  wow slideInRight">
                                 <li class="nav-item"><a href="#hero" class="nav-link">Home</a></li>
                                 <li class="nav-item"><a href="#about" class="nav-link">about me</a></li>
                                 <li class="nav-item"><a href="#services" class="nav-link">services</a></li>
