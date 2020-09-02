@@ -347,13 +347,13 @@
                       <?php 
                         $portfolio = new WP_Query([
                           'post_type'     => 'portfolios',
-                          'posts_per_page'=> 24,
+                          'posts_per_page'=> 100,
                         ]);
 
                         if($portfolio->have_posts()) :
                           while($portfolio->have_posts()) :
                             $portfolio->the_post(); ?>
-                            <div class="col-md-6 col-lg-4 item <?php echo get_post_meta($post->ID, 'category', true); ?>  mb-4">
+                            <div class="col-md-6 col-lg-4 item <?php foreach((get_the_category()) as $category) { echo $category->cat_name . ' '; } ?>  mb-4">
                               <div class="content">
                                   <img src="<?php the_post_thumbnail_url(); ?>" alt="" class="img-fluid">
                                   <div class="overlay">

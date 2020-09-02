@@ -39,7 +39,8 @@
         'public' => true,
         'supports' => array(
           'title', 'thumbnail','custom-fields'
-        )
+        ),
+        'taxonomies'  => array( 'category' ),
       )
     );
   }
