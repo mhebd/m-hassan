@@ -343,7 +343,7 @@
                         </ul>
                     </div>
 
-                    <div class="portfolios row  wow fadeIn">
+                    <div class="portfolios row">
                       <?php 
                         $portfolio = new WP_Query([
                           'post_type'     => 'portfolios',
